@@ -1,0 +1,6 @@
+#!/bin/sh
+uci batch <<-EOF
+	set luci.themes.Marvell=/luci-static/marvell
+	commit luci
+EOF
+exit 0
