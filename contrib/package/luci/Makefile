@@ -286,8 +286,8 @@ define theme
 endef
 
 $(eval $(call theme,openwrt,OpenWrt.org))
-$(eval $(call theme,bootstrap,Bootstrap Theme (default)))
 $(eval $(call theme,marvell,Customized Marvell Theme))
+$(eval $(call theme,bootstrap,Bootstrap Theme (default)))
 
 
 ### Translations ###
@@ -358,7 +358,7 @@ endef
 $(eval $(call collection,,\
 	Standard OpenWrt set including full admin with ppp support and the \
 	default OpenWrt theme,\
-	+uhttpd +uhttpd-mod-ubus +luci-mod-admin-full +luci-theme-bootstrap \
+	+uhttpd +uhttpd-mod-ubus +luci-mod-admin-full +luci-theme-marvell \
 	+luci-app-firewall +luci-proto-ppp +libiwinfo-lua +luci-lib-nixio))
 
 $(eval $(call collection,ssl,\
